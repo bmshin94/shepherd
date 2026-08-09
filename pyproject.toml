@@ -82,10 +82,6 @@ exclude = [
 ]
 
 [[tool.mypy.overrides]]
-module = "shepherd_core.export.atif"
-warn_unused_ignores = false
-
-[[tool.mypy.overrides]]
 module = "shepherd_export.atif"
 warn_unused_ignores = false
 
