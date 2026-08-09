@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   equality or hashing, so otherwise identical file snapshots do not compare
   unequal merely because they were captured at different times.
 
+- **Package test collection no longer breaks subsequent `uv` commands.**
+  The generated `shepherd/packages/__pycache__` directory is excluded from
+  workspace-member discovery, so `uv` does not mistake it for a package
+  missing a `pyproject.toml`.
+
 ## [0.3.0] - 2026-07-08
 
 ### Added

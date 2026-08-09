@@ -47,6 +47,7 @@ members = [
     "vcs-core/extras/*",
     "commons-vcs",
 ]
+exclude = ["shepherd/packages/__pycache__"]
 
 [tool.uv.sources]
 shepherd = { workspace = true }
