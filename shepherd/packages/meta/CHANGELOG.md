@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- **Workspace-backed runs now select a carrier supported by the host platform.**
+  The dialect no longer pins the macOS-only `clonefile` carrier for ordinary
+  workspace execution; it uses the existing platform-aware carrier selection
+  on Linux, macOS, and portable fallback environments.
+
 - **File manifests now have stable snapshot identity and timezone-aware timestamps.**
   `FileManifest.created_at` is recorded in UTC and no longer participates in
   equality or hashing, so otherwise identical file snapshots do not compare
